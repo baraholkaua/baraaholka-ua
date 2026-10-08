@@ -8,6 +8,17 @@
     <title>Барахолка UA 2026 — Купівля, продаж і обмін речей в Україні</title>
     <meta name="description" content="Барахолка UA — найкраща інтернет барахолка в Телеграм. Купуй, продавай та обмінюй речі безпечно в один клік.">
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Барахолка UA",
+      "alternateName": "Онлайн-маркет Барахолка UA",
+      "url": "https://baraaholka-ua.web.app/",
+      "inLanguage": "uk",
+      "sameAs": ["https://t.me/baraaholka_ua", "https://baraaholka-ua.web.app/"]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -206,6 +217,49 @@
             color: var(--primary);
         }
 
+        .btn-market {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0b1f1a 0%, #12332b 100%);
+            border: 1px solid rgba(0, 255, 170, 0.45);
+            color: #00ffaa;
+            padding: 22px 45px;
+            border-radius: 24px;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 30px;
+            margin-left: 10px;
+            box-shadow: 0 10px 30px rgba(0, 255, 170, 0.15), inset 0 0 0 1px rgba(255,255,255,0.03);
+            transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s, background 0.25s, color 0.25s, border-color 0.25s;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .btn-market::before {
+            content: "";
+            position: absolute;
+            top: 0; left: -80%;
+            width: 50%; height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(0,255,170,0.35), transparent);
+            transform: skewX(-20deg);
+            transition: left 0.6s ease;
+        }
+        .btn-market:hover {
+            background: linear-gradient(135deg, #00ffaa 0%, #00c98a 100%);
+            color: #031a12;
+            border-color: #00ffaa;
+            transform: translateY(-6px);
+            box-shadow: 0 20px 45px rgba(0, 255, 170, 0.45);
+        }
+        .btn-market:hover::before { left: 130%; }
+        .btn-market:active {
+            transform: translateY(2px) scale(0.96);
+            box-shadow: 0 4px 12px rgba(0, 255, 170, 0.3), inset 0 4px 12px rgba(0, 0, 0, 0.35);
+            transition-duration: 0.08s;
+        }
+        .btn-market:focus-visible { outline: 3px solid #00ffaa; outline-offset: 4px; }
+
         /* --- Картки та Гріди --- */
         .glass-card { 
             background: var(--card-bg); 
@@ -352,7 +406,7 @@
             h1 { font-size: 2.8rem; }
             .fixed-cta { left: 20px; right: 20px; justify-content: center; bottom: 20px; }
             .glass-card, .seo-card { padding: 30px; }
-            .btn-outline { margin-left: 0; width: 100%; }
+            .btn-outline, .btn-market { margin-left: 0; width: 100%; }
             .btn-main { width: 100%; }
             .back-btn { position: relative; left: 0; top: 0; display: inline-block; margin-bottom: 20px; }
             .header-badges { gap: 10px; }
@@ -389,7 +443,7 @@
             </p>
             <div class="d-flex flex-wrap justify-content-center">
                 <a href="https://t.me/baraaholka_ua" class="btn-main">Зайти в Телеграм-Маркет ⚡</a>
-                <a href="#" class="btn-outline" onclick="showAds()">Подивитись оголошення 🔎</a>
+                <a href="https://baraaholka-ua.web.app/" class="btn-market" target="_blank" rel="noopener" title="Онлайн-маркет Барахолка UA — купівля та продаж на сайті">Зайти в онлайн-маркет 🛒</a>
             </div>
         </div>
     </header>
@@ -474,6 +528,8 @@
                 <h2>Telegram Барахолка: Ваш Надійний Провідник у Світ Вигідних Покупок і Продажів</h2>
                 <p>Останніми роками світ змінюється швидше, ніж будь-коли. Сьогодні мы все більше орієнтуємося на онлайн-простір, і це стосується не тільки спілкування, а й покупок. Одним із найзручніших і найпопулярніших місць для вигідних угод став Telegram — тут ви знайдете все, від найновіших моделей смартфонів до старовинних наручних годинників. У цьому тексті ми розповімо вам про те, які товари можна знайти та продати на Telegram-барахолці, і чому це місце приваблює все більше користувачів.</p>
 
+                <p>Окрім каналу в Telegram, у нас працює повноцінний <a href="https://baraaholka-ua.web.app/" target="_blank" rel="noopener" title="Онлайн-маркет Барахолка UA">онлайн-маркет Барахолка UA</a> — зручний сайт, де можна переглядати свіжі оголошення, шукати товари за категоріями та купувати чи продавати речі по всій Україні без зайвих клопотів.</p>
+
                 <h3>Електроніка та Гаджети: Все, що Потрібно для Сучасного Життя</h3>
                 <p>Не секрет, що одним із найпопулярніших сегментів на барахолці є смартфони. Тут ви зможете знайти як останні моделі iPhone і Samsung Galaxy, так і бюджетні варіанти, ідеально підходящі для повсякденного використання. Ноутбуки — ще одна категорія, яка привертає увагу. Будь то потужні ігрові ноутбуки для геймерів або легкі ультрабуки для роботи і навчання, Telegram-барахолка пропонує величезний вибір.</p>
                 <p>А як щодо телевізорів? Смарт ТВ з широким екраном та ультрасучасним роздільною здатністю можна знайти тут за привабливими цінами. Ці телевізори легко замінять ваш старий аналоговий телевізор і запропонують нові можливості для розваг вдома.</p>
@@ -530,6 +586,7 @@
     <div class="container">
         <p style="letter-spacing: 2px; font-weight: 800;">BARAHOLKA UA 2026</p>
         <p class="small">Найбільша торгова екосистема України. Слава Україні! 🇺🇦</p>
+        <p class="small"><a href="https://baraaholka-ua.web.app/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;" title="Онлайн-маркет Барахолка UA">Онлайн-маркет Барахолка UA</a> · <a href="https://t.me/baraaholka_ua" style="color: var(--primary); text-decoration: none;">Telegram-канал</a></p>
     </div>
 </footer>
 
